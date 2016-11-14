@@ -1,8 +1,8 @@
-== Theory of Operating Systems
+## Theory of Operating Systems
 
-== Unix Shell
+## Unix Shell
 
--- Assignment
+## Assignment
 
 In this lab, you will create a user shell in the C programming language that can understand:
 
@@ -10,7 +10,7 @@ In this lab, you will create a user shell in the C programming language that can
 - simple pipes (e.g. $ /bin/ls | /bin/sort -r)
 - redirecting input and output (e.g. $ ls > /tmp/files.txt)
 - background tasks (e.g. $ find /etc -print & )
--  "cd" -- for "cd" you will need to lookup the library routine "chdir" in the (online) unix manual
+-  "cd" ## for "cd" you will need to lookup the library routine "chdir" in the (online) unix manual
 
 optional (except for grad students)
 - setting environment variables: "var=value" 
@@ -41,7 +41,7 @@ strdup which are part of the same library.
 
 Please clearly indicate in your submission on which system your lab was tested (including architecture & os).
 
--- Changes to Lab Requirements
+## Changes to Lab Requirements
 
 The OS Grading Team has created a testing harness for your shell lab located in your repository under shell/testShell.sh. 
 
@@ -71,7 +71,7 @@ Your shell should not write extraneous messages to standard out
 information.  
 It's fine to print such information to "standard error" (fd #2).
 
--- Useful Snippets
+## Useful Snippets
 
 The shellLabDemos contains several demonstration programs that
 utilize the system calls and features necessary to implement your shell.
@@ -82,7 +82,7 @@ utilize the system calls and features necessary to implement your shell.
 - execDemo.c: a short program using exec
 
 
--- Grading
+## Grading
 
 Our TA will assess:the following aspects of your project:
 
