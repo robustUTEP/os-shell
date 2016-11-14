@@ -11,7 +11,9 @@ pid_t saferFork()
   return fork();
 }
 
+int 
 main() {
   pid_t forkVal = saferFork();
   printf("forkVal=%d\n", forkVal);
+  return 0;
 }
