@@ -66,8 +66,9 @@ Note that the arch1 virtual machine's default value for PS1 is "[\u@\h
 \W]$ " where bash substitutes \u with username, \h with hostname, and
 \w with the current working directory.  
 
-Your shell should not write extraneous messages to standard out (fd
-#1).  This is because our tester will be confused by that information.
+Your shell should not write extraneous messages to standard out 
+(fd #1).  This is because our tester will be confused by that
+information.  
 It's fine to print such information to "standard error" (fd #2).
 
 Useful Snippets
