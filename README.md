@@ -39,11 +39,10 @@ In addition, your program should dynamically allocate memory using the
 library calls malloc and free. You may (if you like) use calloc and
 strdup which are part of the same library.
 
-Please clearly indicate in your submission on which system your lab was tested (including architecture & os).
+## Testing your lab
 
-## Changes to Lab Requirements
-
-The OS Grading Team has created a testing harness for your shell lab located in your repository under shell/testShell.sh. 
+The OS Grading Team has created a testing harness for your shell lab
+located in shell/testShell.sh.  
 
 This may require a couple of very minor changes to your shell lab:
 
@@ -59,7 +58,9 @@ shell's prompt.  Otherwise, your shell can use any reasonable prompt
 string.
 
 To test this, try
+
   $ export PS1=""
+
 before invoking your shell.
 
 Note that the arch1 virtual machine's default value for PS1 is "[\u@\h
