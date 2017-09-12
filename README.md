@@ -2,17 +2,41 @@
 
 ## Unix Shell
 
-## Assignment
+## Assignment Part 1
+
+Using your tokenizer and the system calls fork(), exec(), and wait() create a simple shell that:
+
+- prints a command prompt which is "$ " and waits for the user to enter a command
+- parse the command using your tokenizer 
+- fork your shell and in the child process exec the command with its arguments
+- the parent process should wait for the child to terminate
+- print "command not found" if the command is not found
+
+We have provided a program called tt (tokenizer tester) which is meant to test your tokenizer. Compile and add this program to your PATH 
+environment variable before running your shell.
+
+Here's an example output of tt:
+
+$ tt  &nbsp;&nbsp;&nbsp;hello&nbsp;&nbsp;&nbsp;&nbsp;world&nbsp;&nbsp;&nbsp;&nbsp;peace&nbsp;&nbsp;&nbsp;&nbsp;<br />
+argc = 4<br />
+argv[ 0 ] = tt<br />
+argv[ 1 ] = hello<br />
+argv[ 2 ] = world<br />
+argv[ 3 ] = peace<br />
+<br />
+$
+
+## Assignment Part 2
 
 In this lab, you will create a user shell in the C programming language that can understand:
 
 - simple commands (e.g. $ /bin/ls or $ ls )
 - simple pipes (e.g. $ /bin/ls | /bin/sort -r)
-- redirecting input and output (e.g. $ ls > /tmp/files.txt)
 - background tasks (e.g. $ find /etc -print & )
 -  "cd" ## for "cd" you will need to lookup the library routine "chdir" in the (online) unix manual
 
 optional (except for grad students)
+- redirecting input and output (e.g. $ ls > /tmp/files.txt)
 - setting environment variables: "var=value" 
 - expanding ~ at the beginning of a parameter
 - expanding non-embedded environment variables (e.g. "echo $PATH")
