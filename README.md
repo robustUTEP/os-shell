@@ -39,6 +39,8 @@ In this lab, you will create a user shell in the C programming language that can
 - background tasks (e.g. $ find /etc -print & )
 -  "cd" ## for "cd" you will need to lookup the library routine "chdir" in the (online) unix manual
 
+You have additional components required for testing this part of the shell. See the section below for further details.
+
 optional (except for grad students)
 - redirecting input and output (e.g. $ ls > /tmp/files.txt)
 - setting environment variables: "var=value" 
@@ -71,8 +73,6 @@ strdup which are part of the same library.
 
 The OS Grading Team has created a testing harness for your shell lab
 located in shell/testShell.sh.  
-
-This may require a couple of very minor changes to your shell lab:
 
 The tests will provide commands to your shells through standard input
 (fd #0).  Those command sequences terminate with end-of-file.  Just
