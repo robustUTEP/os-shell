@@ -8,9 +8,13 @@ Using your tokenizer and the system calls fork(), exec(), and wait() create a si
 
 - prints a command prompt which is "$ " and waits for the user to enter a command
 - parse the command using your tokenizer 
-- fork your shell and in the child process exec the command with its arguments
-- the parent process should wait for the child to terminate
+- create a child process that uses execve to run the command with its arguments.  
+-- If an absolute path is not specified, your shell should instead find it using the $PA%TH environment variable.
+- the parent process should wait for the child to terminate before printing another command prompt.
 - print "command not found" if the command is not found
+- if the command fails (with a non-zero exit value N), your shell should print "Program terminated with exit code N."
+- empty commands should do nothing
+- the "exit" command should cause your shell to terminate.
 
 We have provided a program called tt (tokenizer tester) which is meant to test your tokenizer. Compile and add this program to your PATH 
 environment variable before running your shell.
