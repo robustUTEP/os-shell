@@ -16,12 +16,12 @@ Using your tokenizer and the system calls fork(), exec(), and wait() create a si
 - empty commands should do nothing
 - the "exit" command should cause your shell to terminate.
 
-We have provided a program called tt (tokenizer tester) which is meant to test your tokenizer. Compile and add this program to your PATH 
+We have provided a program called argDemo (tokenizer tester) which is meant to test your tokenizer. Compile and add this program to your PATH 
 environment variable before running your shell.
 
 Here's an example output of tt:
 
-$ tt  &nbsp;&nbsp;&nbsp;hello&nbsp;&nbsp;&nbsp;&nbsp;world&nbsp;&nbsp;&nbsp;&nbsp;peace&nbsp;&nbsp;&nbsp;&nbsp;<br />
+$ argDemo  &nbsp;&nbsp;&nbsp;hello&nbsp;&nbsp;&nbsp;&nbsp;world&nbsp;&nbsp;&nbsp;&nbsp;peace&nbsp;&nbsp;&nbsp;&nbsp;<br />
 argc = 4<br />
 argv[ 0 ] = tt<br />
 argv[ 1 ] = hello<br />
