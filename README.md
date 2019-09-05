@@ -1,14 +1,18 @@
 ## Unix Shell
 
-Your goal for this lab is to build a user shell for a Unix operating system. In general, you are expected to mimic some of the behaviors of the bash shell you have been using. In fact, the provided testing harness will compare the output of your shell to the output of the bash shell to test for correctness.
+Your goal for this lab is to build a user shell for a Unix operating
+system. In general, you are expected to mimic some of the behaviors of
+the bash shell you have been using. The provided testing
+harness will compare the output of your shell to the output of the
+bash shell to test for correctness.
 
 ### Requirements
 
 Your shell should meet the following requirements:
 
-1. Prints "$ " as a prompt string (if PS1 is not set) and waits for the user to enter a command.
-2. Allows the user to run programs.
-	* Your shell should create a child process that uses execve to run the command with its arguments.  
+1. Prints a prompt string specified by shell variable PS1 when expecting a command (if PS1 is not set, the default prompt should be "$ ").
+2. Accepts the standard unix command shell syntex for specifying commands and parameters
+	* Your shell should create a child process that uses execve to run the command with its parameters.  
 	* If an absolute path is not specified, your shell should instead find it using the $PATH environment variable.
 	* The parent process should wait for the child to terminate before printing another command prompt.
 3. Handles expected user error.
