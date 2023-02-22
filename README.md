@@ -56,7 +56,7 @@ To test this effect per command, try the following:
   (export PS1=""; ./shell.py)
 ```
 
-*Learing Outcomes*
+### Learning Outcomes
 
 - compose a executable python script
 - fd io
