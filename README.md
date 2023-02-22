@@ -56,6 +56,23 @@ To test this effect per command, try the following:
   (export PS1=""; ./shell.py)
 ```
 
+*Learing Outcomes*
+
+- compose a executable python script
+- fd io
+- fd lifecycle (close, dup, how fd's are assigned)
+- open files
+- create new processes
+- run an arbitrary program by its filename
+- wait for a child process to die
+- env vars:
+-- what they are, why exist
+-- path & ps1
+- pipes
+- rerouting fd plumbing
+- tokenize
+
+
 *Important!*
 Your shell should not write extraneous messages to standard out (fd #1). This is because our tester will be confused by that
 information. It's fine to print such information to "standard error" (fd #2).
