@@ -59,19 +59,20 @@ To test this effect per command, try the following:
 ### Learning Outcomes
 
 - compose a executable python script
-- fd io
-- fd lifecycle (close, dup, how fd's are assigned)
-- open files
-- create new processes
+- parse commands
+-- simple w/ args
+-- input/output redirection
+--  pipes
+- fd io (read, write, lseek)
+- fd connect: create/open files and pipes
+- fd lifecycle:
+-- close, dup, set_inheritance,
+-- ability to replumb fd's
+- process lifecycle: create, terminate, wait for child to terminate
 - run an arbitrary program by its filename
-- wait for a child process to die
 - env vars:
 -- what they are, why exist
--- path & ps1
-- pipes
-- rerouting fd plumbing
-- tokenize
-
+-- can use PATH & PS1 
 
 *Important!*
 Your shell should not write extraneous messages to standard out (fd #1). This is because our tester will be confused by that
